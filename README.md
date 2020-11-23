@@ -5,24 +5,24 @@ Automating the deployment process of Deep Learning models by creating APIs for d
 ## How to Run?
 
 1) Set up Docker, Celery and Redis-server on your machine.
-2) Clone this repository./
-`git clone https://github.com/asaxena2526/AutoDeeploy.git`/
+2) Clone this repository.<br />
+`git clone https://github.com/asaxena2526/AutoDeeploy.git`<br />
 `cd AutoDeeploy`
-3) Install all the requirements./
+3) Install all the requirements.<br />
 `pip3 install -r requirement.txt`
-4) Create an empty repository named models./
+4) Create an empty repository named models.<br />
 `mkdir models`
-5) Move to the folder images and build the image./
-`cd images`/
+5) Move to the folder images and build the image.<br />
+`cd images`<br />
 `docker build --tag baseimage .`
-6) Move to the folder app and install the node modules./
-`cd ../app`/
-`yarn install`/
+6) Move to the folder app and install the node modules.<br />
+`cd ../app`<br />
+`yarn install`<br />
 `yarn start` `# This will run the react server`
-7) Move to the folder api and run flask server, redis server, celery./
-`cd ../api`/
-`celery -A deploy worker --pool=solo --loglevel=info`/
-`redis-server`/
+7) Move to the folder api and run flask server, redis server, celery.<br />
+`cd ../api`<br />
+`celery -A deploy worker --pool=solo --loglevel=info`<br />
+`redis-server`<br />
 `python3 automate.py`
 
 8) All the things are set.
