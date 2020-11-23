@@ -1,0 +1,6 @@
+dump.rdb
+/models/*
+/pythoncache/*
+/app/node_modules
+__pycache__
+/api/__pycache__
