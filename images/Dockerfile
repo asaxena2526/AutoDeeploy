@@ -1,6 +1,7 @@
 FROM gcr.io/deeplearning-platform-release/base-cpu
 # FROM ubuntu:20.04
 
+RUN conda create -n autodeeploy-env python=3.7 pip
 
 # RUN apt-get update \
 #   && apt-get install -y python3-pip python3-dev \
