@@ -33,7 +33,7 @@ def deploy(git_url):
    
     port = str(5000+int(unique_id))
    
-    client.containers.run("baseimage3",detach=True,environment=["PORT="+port],
+    client.containers.run("baseimage",detach=True,environment=["PORT="+port],
         name="project"+unique_id,ports={port:port},
         volumes={os.getcwd()+"/../models/project"+unique_id:{'bind':'/app','mode':'rw'},
                 os.getcwd()+"/../pythoncache":{'bind':'/root/.cache','mode':'rw'}}
