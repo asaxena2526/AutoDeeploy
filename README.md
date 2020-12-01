@@ -4,7 +4,7 @@ Automating the deployment process of Deep Learning models by creating APIs for d
 
 ## How to Run?
 
-1) Set up Docker, Celery and Redis-server on your machine, After installing docker, run the following command
+1) Set up Docker, Celery and Redis-server on your machine, After installing docker, run the following command<br/>
 `sudo groupadd docker`<br/>
 `sudo usermod -aG docker $USER` <br/>
 `newgrp docker`
